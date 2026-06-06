@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="WorkMonitorApp">
+<head>
+  <meta charset="utf-8">
+  <title>Work Monitoring App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+  <!-- App files -->
+  <script src="js/app.js"></script>
+
+  <!-- Services -->
+  <script src="js/services/vehicleService.js"></script>
+  <script src="js/services/driverService.js"></script>
+  <script src="js/services/workTableService.js"></script>
+  <script src="js/services/dieselService.js"></script>
+  <script src="js/services/partyService.js"></script>
+
+  <!-- Controllers -->
+  <script src="js/controllers/VehiclesController.js"></script>
+  <script src="js/controllers/DriversController.js"></script>
+  <script src="js/controllers/WorkTablesController.js"></script>
+  <script src="js/controllers/DieselController.js"></script>
+  <script src="js/controllers/PartiesController.js"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    nav { margin-bottom: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { padding: 8px; border: 1px solid #ccc; text-align: left; }
+    h2 { margin-top: 0; }
+  </style>
+</head>
+<body>
+  <h1>Work Monitoring System</h1>
+
+  <nav>
+    <a href="#/vehicles">Vehicles</a>
+    <a href="#/drivers">Drivers</a>
+    <a href="#/work_tables">Work Details</a>
+    <a href="#/diesel">Diesel Transactions</a>
+    <a href="#/parties">Parties</a>
+  </nav>
+
+  <div ng-view></div>
+</body>
+</html>

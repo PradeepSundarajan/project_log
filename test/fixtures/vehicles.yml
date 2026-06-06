@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vehicle_no: MyString
+  vehicle_type: MyString
+  display_name: MyString
+  capacity: 1
+  status: MyString
+
+two:
+  vehicle_no: MyString
+  vehicle_type: MyString
+  display_name: MyString
+  capacity: 1
+  status: MyString

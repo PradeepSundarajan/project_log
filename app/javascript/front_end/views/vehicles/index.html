@@ -1,0 +1,20 @@
+<div>
+  <h2>Vehicles</h2>
+  <table border="1">
+    <tr>
+      <th>No</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="v in vehicles">
+      <td>{{ v.vehicle_no }}</td>
+      <td>{{ v.vehicle_type }}</td>
+      <td>{{ v.status }}</td>
+      <td>
+        <a href="#/vehicles/{{v.id}}">View</a>
+        <button ng-click="deleteVehicle(v.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>

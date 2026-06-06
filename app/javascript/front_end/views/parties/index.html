@@ -1,0 +1,15 @@
+<div>
+  <h2>Parties</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="p in parties">
+      <td>{{ p.name }}</td>
+      <td>{{ p.contact }}</td>
+      <td><button ng-click="deleteParty(p.id)">Delete</button></td>
+    </tr>
+  </table>
+</div>

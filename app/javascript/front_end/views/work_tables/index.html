@@ -1,0 +1,26 @@
+<div>
+  <h2>Work Details</h2>
+  <table border="1">
+    <tr>
+      <th>Vehicle</th>
+      <th>Driver</th>
+      <th>From</th>
+      <th>To</th>
+      <th>Material</th>
+      <th>Party</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="w in works">
+      <td>{{ w.vehicle.display_name }}</td>
+      <td>{{ w.driver.name }}</td>
+      <td>{{ w.from }}</td>
+      <td>{{ w.to }}</td>
+      <td>{{ w.material }}</td>
+      <td>{{ w.party_name }}</td>
+      <td>
+        <a href="#/work_tables/{{w.id}}">View</a>
+        <button ng-click="deleteWork(w.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>

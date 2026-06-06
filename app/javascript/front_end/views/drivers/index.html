@@ -1,0 +1,20 @@
+<div>
+  <h2>Drivers</h2>
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Mobile</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
+    <tr ng-repeat="d in drivers">
+      <td>{{ d.name }}</td>
+      <td>{{ d.mobile_no }}</td>
+      <td>{{ d.address }}</td>
+      <td>
+        <a href="#/drivers/{{d.id}}">View</a>
+        <button ng-click="deleteDriver(d.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
